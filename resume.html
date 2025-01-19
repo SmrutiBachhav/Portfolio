@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME</title>
+    <link rel="stylesheet" href="resumeStyle.css">
+    <script src="https://kit.fontawesome.com/143802a59a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">Smruti.</h1>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java Full Stack Developer</p>
+                <h1 class="typewriter">Hi! I'm <span>Smruti Bachhav</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/smrutiuser.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p class="about-text">Currently pursuing a BE in Computer Engineering at MET Bhujbal Knowledge City. 
+                        Skilled in Java, Python, MySQL, HTML, CSS, Bootstrap, C++ and C. I have 
+                        developed mini projects like Bank management, Employee Management and Cafe Management systems, 
+                        applying OOP and DBMS concepts. 
+                        Passionate about technology, I am a quick learner and eager to contribute to the tech world while continuously expanding my knowledge.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!-- SKILLS -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Basics to advance Java</li>
+                            <li><span>MySQL</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>Python</span></li>                    
+                            <li><span>C</span></li>
+                            <li><span>C++</span></li>
+                        </ul>
+                    </div>
+                    <!-- ACHIEVEMENTS -->
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>Certified in Data Structures and Algorithms using Java</span></li>
+                                <ul>
+                                    <li>Completed a certified 12 week course from NPTEL with a score of <b>55%</b>.</li>
+                                    <li>Gained practical problem-solving skills and a deeper understanding of core programming concepts.</li>
+                                    <li>Completed under the guidance of esteemed IIT Kharagpur faculty.</li>
+                                </ul>
+                            <li><span>Android Developer Virtual Internship</span></li>
+                                <ul>
+                                    <li>Successfully completed a 10-week AICTE-approved Android Developer Virtual Internship (July–September 2024). </li>
+                                    <li>Supported by the Indian Edu Program in collaboration with Google for Developers.</li>
+                                    <li>Gained hands-on experience in Kotlin and Android application development.</li>
+                                </ul>
+                        </ul>
+                    </div>
+                    <!-- EDUCATION -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>Pursuing <span><b>BE in Computer Engineering</b></span> at MET's Bhujbal Knowledge City Institute of Engineering. <br>
+                            First Year (2023-2024) <br>
+                            SGPA: 9.55</li>
+                            <li><span><b>HSC</b></span> from Kendriya Vidyalaya No.1 School <br>
+                            HSC (2022-2023)<br>
+                            Percentage: 85.2</li>
+                            <li><span><b>SSC</b></span> from Kendriya Vidyalaya No.1 School <br>
+                            HSC (2020-2021)<br>
+                            Percentage: 90.2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, obcaecati quam. Voluptas provident corrupti aliquid numquam velit 
+                    laudantium, in pariatur inventore, maxime eaque iusto eum cupiditate? 
+                    Aliquam sint nostrum sit!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, obcaecati quam. Voluptas provident corrupti aliquid numquam velit 
+                    laudantium, in pariatur inventore, maxime eaque iusto eum cupiditate? 
+                    Aliquam sint nostrum sit!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>   
+    
+    <!-- My Work/PORTFOLIO -->
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Portfolio Website Project</h3>
+                        <ul>
+                            <li>Designed and developed a responsive resume website using HTML, CSS and JavaScript.</li>
+                            <li>Showcased personal achievements, skills, and projects effectively in a user-friendly format.</li>
+                            <li>Focused on clean, semantic HTML structure to ensure compatibility and accessibility across various devices and browsers.</li>
+                            <li>Demonstrated foundational skills in web development and static website creation.</li>
+                        </ul>
+                        <a href="https://github.com/SmrutiBachhav"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Bank Management System</h3>
+                        <ul>
+                            <li>Designed and developed a simple system for managing basic banking operations using Java and OOP concepts.</li>
+                            <li>Implemented features such as transaction processing, withdrawal functionality, and balance display after transactions.</li>
+                            <li>Added validations to display appropriate messages for unsuccessful withdrawal attempts.</li>
+                            <li>Demonstrated proficiency in object-oriented programming and basic financial application logic.</li>
+                        </ul>
+                        <a href="https://github.com/SmrutiBachhav"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-col-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> smrutib2006@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9405793579</p>
+                    <div class="social-icons">
+                        <a href="linkedin.com/in/smruti-bachhav"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/SmrutiBachhav"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Smruti_Bachhav_Resume.pdf" target="_blank" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-col-right"></div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Smruti. Made with diligent! <i class="fa-solid fa-gem"></i></p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
